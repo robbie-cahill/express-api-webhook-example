@@ -5,12 +5,6 @@ const port = 3000;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-app.get('/api', (request, response) => {
-    response.send({
-        success: true
-    });
-});
-
 app.post('/webhook-receive', (request, response) => {
     response.send({
         payloadSent: request.body,
