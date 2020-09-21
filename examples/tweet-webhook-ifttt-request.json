@@ -1,4 +1,4 @@
 {
   "username": "{{UserName}}",
-  "tweetContent": "{{Text}}"
+  "text": "{{Text}}"
 }
