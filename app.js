@@ -12,6 +12,11 @@ app.post('/webhook-receive', (request, response) => {
     });
 });
 
+app.post('/tweeted', (request, response) => {
+    const { body } = response;
+    console.log(body.username + " tweeted " + body.text);
+});
+
 app.listen(port, () => {
     console.log(`Express api/webhook app listening at http://localhost:${port}`);
 });
