@@ -13,7 +13,7 @@ app.post('/webhook-receive', (request, response) => {
 });
 
 app.post('/tweeted', (request, response) => {
-    const { body } = response;
+    const { body } = request;
     console.log(body.username + " tweeted " + body.text);
 });
 
