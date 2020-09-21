@@ -7,8 +7,8 @@ Prerequisites
 
 Installation
 =======
-Just clone and run `npm install` to set up the project
-
+- Clone the source `git clone https://github.com/cipher-code/express-api-webhook-example.git`
+- Run `npm install` to set up the project
 
 Running
 ======
