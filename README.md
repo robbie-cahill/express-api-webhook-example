@@ -2,6 +2,7 @@ Simple example webhooks app
 
 Prerequisites
 ======
+- Git
 - NodeJS
 - NPM
 
