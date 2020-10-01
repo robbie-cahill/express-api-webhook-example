@@ -14,7 +14,7 @@ app.post('/webhook-receive', (request, response) => {
 
 app.post('/tweeted', (request, response) => {
     const { body } = request;
-    console.log(body.username + " tweeted " + body.text);
+    console.log(body.tweet);
 });
 
 app.listen(port, () => {
