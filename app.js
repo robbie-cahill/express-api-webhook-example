@@ -5,10 +5,17 @@ const port = 3000;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+app.get('/webhook-receive', (request, response) => {
+    const { url } = request;
+
+    console.log("Received GET webhook request");
+    console.log("Full URL:" + url);
+});
+
 app.post('/webhook-receive', (request, response) => {
-    console.log("Received webhook request to /webhook-receive");
     const { body } = request;
 
+    console.log("Received POST webhook request to /webhook-receive");
     console.log("Request body:");
     console.log(body);
 });
