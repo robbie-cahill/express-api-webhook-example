@@ -20,6 +20,21 @@ app.post('/webhook-receive', (request, response) => {
     console.log(body);
 });
 
+app.put('/webhook-receive', (request, response) => {
+    const { body } = request;
+
+    console.log("Received PUT webhook request to /webhook-receive");
+    console.log("Request body:");
+    console.log(body);
+});
+
+app.delete('/webhook-receive', (request, response) => {
+    const { url } = request;
+
+    console.log("Received DELETE webhook request");
+    console.log("Full URL:" + url);
+});
+
 app.post('/tweeted', (request, response) => {
     const { body } = request;
     console.log(body.tweet);
